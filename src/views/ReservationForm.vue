@@ -68,18 +68,22 @@
         },
         methods: {
             saveData() {
-            // Verileri bir objede topluyoruz.
                 const data = {
                     girisTarihi: this.girisTarihi,
                     gidisTarihi: this.gidisTarihi,
                     yetiskinSayisi: this.yetiskinSayisi,
                     cocukSayisi: this.cocukSayisi,
-                    selectedValue : this.selectedOption
-                };
+                    selectedValue: this.selectedOption
+            };
+
+            console.log(data , "data")
+
+            //stateti güncelledim(dispatch)
+                this.$store.dispatch('saveFormData', data);
+
+                console.log(data , "data1")
+
                 this.$router.push('/landspace');
-        
-                // 'save-data' adlı bir emit olayıyla verileri diğer bileşene aktarıyoruz.
-                this.$emit('save-data', data);
             },
 
             selectOption(option) {
@@ -89,6 +93,7 @@
         },
         mounted() {
             this.selectedOption = 'Rezervasyon yapmak istediğiniz oteli seçiniz.'
+            console.log(this.$store.state.formData, 'count ')
         },
     }
 </script>
