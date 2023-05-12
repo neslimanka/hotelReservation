@@ -1,0 +1,54 @@
+[
+    {
+    "hotel_id": 1,
+    "start_date": "2021-01-20",
+    "end_date": "2021-02-10",
+    "adult": 10,
+    "child": 2,
+    "room_type": 2,
+    "room_scenic": 3,
+    "price": "7676",
+    "coupon_code": "code100",
+    "card_name": "Pttem AŞ",
+    "card_number": "14627788082",
+    "card_date_year":"2030",
+    "card_date_month": "01",
+    "card_cvv": 676,
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    },
+    {
+    "hotel_id": 2,
+    "start_date": "2021-01-20",
+    "end_date": "2021-02-10",
+    "adult": 10,
+    "child": 2,
+    "room_type": 2,
+    "room_scenic": 3,
+    "price": "7676",
+    "coupon_code": "code100",
+    "card_name": "Pttem AŞ",
+    "card_number": "14627788082",
+    "card_date_year":"2030",
+    "card_date_month": "01",
+    "card_cvv": 676,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    },
+    {
+    "hotel_id": 3,
+    "start_date": "2021-01-20",
+    "end_date": "2021-02-10",
+    "adult": 10,
+    "child": 2,
+    "room_type": 2,
+    "room_scenic": 3,
+    "price": "7676",
+    "coupon_code": "code100",
+    "card_name": "Pttem AŞ",
+    "card_number": "14627788082",
+    "card_date_year":"2030",
+    "card_date_month": "01",
+    "card_cvv": 676,
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    }
+
+]
