@@ -53,48 +53,52 @@
   
 <script>
 
-    export default {
-        data() {
-            return {
-                girisTarihi: '',
-                gidisTarihi: '',
-                yetiskinSayisi: 0,
-                cocukSayisi: 0,
-                options: ['Option 1', 'Option 2', 'Option 3'],
-                selectedOption: 'Rezervasyon yapmak istediğiniz oteli seçiniz.',
-                showOptions: false,
-                selectedValue: ''
-            }
-        },
-        methods: {
-            saveData() {
-                const data = {
-                    girisTarihi: this.girisTarihi,
-                    gidisTarihi: this.gidisTarihi,
-                    yetiskinSayisi: this.yetiskinSayisi,
-                    cocukSayisi: this.cocukSayisi,
-                    selectedValue: this.selectedOption
-            };
-
-            console.log(data , "data")
-
-            //stateti güncelledim(dispatch)
-                this.$store.dispatch('saveFormData', data);
-
-                console.log(data , "data1")
-
-                this.$router.push('/landspace');
-            },
-
-            selectOption(option) {
-                this.selectedOption = option;
-                this.showOptions = false;
-            },
-        },
-        mounted() {
-            this.selectedOption = 'Rezervasyon yapmak istediğiniz oteli seçiniz.'
-            console.log(this.$store.state.formData, 'count ')
-        },
+export default {
+  data() {
+    return {
+      girisTarihi: '',
+      gidisTarihi: '',
+      yetiskinSayisi: 0,
+      cocukSayisi: 0,
+      options: ['Option 1', 'Option 2', 'Option 3'],
+      selectedOption: 'Rezervasyon yapmak istediğiniz oteli seçiniz.',
+      showOptions: false,
+      selectedValue: ''
     }
+  },
+  methods: {
+    saveData() {
+      const data = {
+        girisTarihi: this.girisTarihi,
+        gidisTarihi: this.gidisTarihi,
+        yetiskinSayisi: this.yetiskinSayisi,
+        cocukSayisi: this.cocukSayisi,
+        selectedValue: this.selectedOption
+      };
+
+      console.log(data , "data")
+
+      //stateti güncelledim(dispatch)
+      this.$store.dispatch('saveFormData', data);
+
+      console.log(data , "data1")
+
+      this.$router.push('/landspace');
+    },
+
+    selectOption(option) {
+      this.selectedOption = option;
+      this.showOptions = false;
+    },
+  },
+
+  mounted() {
+
+    this.selectedOption = 'Rezervasyon yapmak istediğiniz oteli seçiniz.'
+
+    console.log(this.$store.state.formData, 'count ')
+
+  },
+}
 </script>
   
